@@ -1,0 +1,8 @@
+.banner {
+    background-color: var(--blue-600);
+    text-align: center;
+}
+
+.banner img {
+    max-width: 80%;
+}

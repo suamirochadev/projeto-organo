@@ -1,0 +1,40 @@
+:root {
+/* Cores principais */
+  --white-100:#FFFFFF;
+  --black-900: #212121;
+  --gray-100: #F2F2F2;
+  --blue-300:#95FFD4;
+  --blue-600: #6278F7;
+/* Cores Times */
+  --blue-200:#D9F7E9;
+  --blue-100:#E8F8FF;
+  --green-100: #F0F8E2;
+  --pink-100:#FDE7E8;
+  --purple-100:#FAE9F5;
+  --orange-200: #FFF5D9;
+  --orange-100: #FFEEDF;
+/* Cores Destaques */
+  --green-400: #57C278;
+  --blue-400: #82CFFA;
+  --green-400: #A6D157;
+  --pink-400: #E06B69;
+  --purple-400:#DB6EBF;
+  --yellow-400:#FFBA05;
+  --orange-400:#FF8A29;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: var(--white-100);
+  color:var(--black-900);
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
