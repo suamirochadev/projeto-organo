@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Banner from "./components/Banner"
 import Form from "./components/Form"
+import Rodape from './components/Rodape'
 import Time from './components/Time'
 
 function App() {
@@ -44,7 +45,11 @@ function App() {
 
    const [colaboradores, setColaboradores] = useState([])
 
-   const novoColaborador = (colaborador) => {
+   function deletarColaborador() {
+    console.log('deletando colaborador')
+   }
+
+   const aoCadastrar = (colaborador) => {
     setColaboradores([...colaboradores, colaborador])
    }
 
@@ -54,17 +59,25 @@ function App() {
         <Banner/>
         <Form
           times={times.map(time => time.nome)}
-          aoColaboradorCadastrado={colaborador => novoColaborador(colaborador)} 
+          aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} 
         />
-
-        {times.map(time => 
+        <section className='times'>
+          <h1>
+            Minha Organização
+          </h1>
+          {times.map((time, indice) => 
         <Time 
-          key={time.nome} 
-          nome={time.nome} 
+          key={indice} 
+          time={time} 
           corPrimaria={time.corPrimaria} 
           corSecundaria={time.corSecundaria}
-          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-        />)}
+          colaboradores={colaboradores.filter
+            (colaborador => colaborador.time === time.nome)}
+          aoDeletar={deletarColaborador}
+        />
+          )}
+        </section>
+        <Rodape />
       </div>
     </div>
   )

@@ -1,0 +1,23 @@
+.rodape{
+    background-image: url(/Rodape.png);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 4.75rem 10.125rem;
+}
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-100);
+}
+
+img {
+    margin: 0.5rem;
+}
+a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: var(--white-100);
+}

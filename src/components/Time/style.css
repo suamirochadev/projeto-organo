@@ -1,6 +1,7 @@
 .time {
     text-align: center;
     padding: 2rem;
+    background-image: url(/formas.png);
 }
 
 .time h3 {
