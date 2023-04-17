@@ -15,7 +15,7 @@
 }
 
 .colaborador .rodape {
-    background: #FFFFFF;
+    background: var(--white-100);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
     padding-top: 5.625rem;
@@ -23,7 +23,7 @@
 }
 
 .colaborador .rodape h4 {
-    color: #6278F7;
+    color: var(--blue-600);
     font-size: 1.125rem;
     line-height: 1.375rem;
     font-weight: bold;
@@ -33,7 +33,7 @@
 .colaborador .rodape h5 {
     font-size: 1.125rem;
     line-height: 1.375rem;
-    color: #212121;
+    color: var(--black-900);
     padding: 0 1rem;
 }
 
@@ -41,4 +41,7 @@
     position: absolute;
     right: -0.625rem;
     top: -0.625rem;
+}
+.favoritar {
+    margin-top: 20px;
 }

@@ -1,10 +1,10 @@
 import './style.css'
 
-function Botao(props) {
+function Botao({texto}) {
     return(
         <button 
         className='botao'>
-            {props.children}
+            {texto}
         </button>
     )
 }

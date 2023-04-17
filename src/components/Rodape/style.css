@@ -1,23 +1,17 @@
-.rodape{
-    background-image: url(/Rodape.png);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 4.75rem 10.125rem;
-}
-h6 {
-    font-size: 1rem;
-    font-weight: 500;
+.footer {
+    background: var(--blue-600);
     color: var(--white-100);
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-img {
-    margin: 0.5rem;
+.footer ul li {
+    display: inline-block;
+    margin-right: 2rem;
 }
-a {
-    text-decoration: none;
-    list-style: none;
-    cursor: pointer;
-    color: var(--white-100);
+
+.footer ul li:last-child {
+    margin-right: 0;
 }

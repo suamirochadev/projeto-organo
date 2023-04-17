@@ -1,4 +1,4 @@
-.campo-texto {
+.campo {
     margin: 1.5rem 0rem;
 }
 
@@ -8,15 +8,23 @@
     font-size: 1.25rem;
 }
 
-.campo-texto input {
+input {
     background-color: #fff;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 0px;
     width: 100%;
     border: none;
     font-size: 1rem;
-    padding: 1.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 .input:focus {
     outline: 3px solid var(--blue-600);
+}
+
+.campo-color input {
+    padding: 0.313rem 0.500rem;
+    height: 2.5rem;
+    border-radius: 50px;
 }
